@@ -39,7 +39,7 @@ form.addEventListener("submit", async (ev) => {
       const storageRef = ref(storage, email);
       uploadBytes(storageRef, document.getElementById("file").files[0]).then(
         (snapshot) => {
-          console.log("Uploaded a blob or file!");
+          alert("Uploaded a blob or file!");
         }
       );
       Swal.fire("Good job!", "Sign Up Succesfull!", "success").then(() => {
